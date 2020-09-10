@@ -43,7 +43,7 @@
 				margin-top: 50px;
 				margin-bottom: 50px;
 				width: 700px;
-				height: 740px;
+				height: 690px;
 				background-color: #1B1A1A;
 				border-radius: 10px;
 			}
@@ -118,14 +118,14 @@
 			<hr style="margin-left:10px; margin-right:10px;">
 			<br>
 			<form>
-				<label style="margin-top: 20px;" class="label1">Nome do interessado</label><br>
-				<input type="text" name="interessado" class="input1"/><br><br>
-				<label class="label1">Nome da empresa</label><br>
-				<input type="text" name="empresa" class="input1"/><br><br>
-				<label class="label1">Salário</label><br>
-				<input style="width: 280px;" type="number" name="salario" class="input1" value="730.00"/><br><br>
-				<label name="tipo" class="label1">Tipo de trabalho</label><br>
-				<select style="width: 285px; height: 27px;" class="input1">
+				<label for="interessado" style="margin-top: 20px;" class="label1">Nome do interessado</label><br>
+				<input id="interessado" type="text" name="interessado" class="input1"/><br><br>
+				<label for="empresa" class="label1">Nome da empresa</label><br>
+				<input id="empresa" type="text" name="empresa" class="input1"/><br><br>
+				<label for="salario" class="label1">Salário</label><br>
+				<input id="salario" style="width: 280px;" type="number" name="salario" class="input1" min="730.00" max="3000.00" maxlength="7" /><br><br>
+				<label for="tipo" name="tipo" class="label1">Tipo de trabalho</label><br>
+				<select id="tipo" style="width: 285px; height: 27px;" class="input1">
 					<option value="null" selected>Selecione...</option>
 					<option value="Home">Home office</option> 
 					<option value="Presencial">Presencial</option>
@@ -136,8 +136,8 @@
 				<input style="margin-left: 20px;" name="vinculo" type="radio" class="input2" id="P" value="PJ"/><label for="P" class="label2">PJ</label>
 				<input style="margin-left: 20px;" name="vinculo" type="radio" class="input2" id="F" value="Freelancer"/><label for="F" class="label2">Freelancer</label>
 				<br><br>
-				<label class="label1">Data de início</label><br>
-				<input style="width: 285px; height: 28px;" type="date" name="inicio" class="input1"/><br><br>
+				<label class="label1" for="data">Data de início</label><br>
+				<input id="data" style="width: 285px; height: 28px;" type="date" name="inicio" class="input1"/><br><br>
 				<input style="margin-left: 30px;" type="checkbox" id="urgencia">
 				<label class="label2" for="urgencia">Preciso dos seus serviços com urgência!</label><br><br>
 			</form>
