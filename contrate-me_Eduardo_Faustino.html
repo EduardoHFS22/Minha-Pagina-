@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contrate-me</title>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/15/Logotipo_IFET.svg">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			
+			table {
+				border-collapse: collapse;
+				width: 90%;
+			}
+
+			th, td {
+				text-align: left;
+				padding: 8px;
+				color: white;
+			}
+
+			tr:nth-child(even){background-color: rgb(75, 75, 75);}
+
+			th {
+				background-color: #186e1b;
+				color: white;
+			}
+			
+			.container {
+				 background-image: url('fundo.jpg');
+				 display: flex;
+				 background-size: cover; 
+				 border: 2px;
+				 background-repeat: no-repeat;
+				 flex-direction: row;
+				 justify-content: center;
+				 align-items: center
+			}
+			
+			.box {
+				border-width: 2px;
+				border-color: black;
+				border-style: solid;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				width: 700px;
+				height: 740px;
+				background-color: #1B1A1A;
+				border-radius: 10px;
+			}
+			
+			div.img {
+				display: inline-block;
+				width: 128px;
+				height: 128px;
+			}
+
+			.txt {
+				color:white; 
+				margin-left:210px;
+			}
+
+			#ir{
+            margin-left: 200px;
+            width: 140px;
+            height: 32px;
+            background-color: blue;
+            border-radius: 3px;
+            border: 0px solid;
+       	    }
+			
+			h3, h2,h1,label,p{
+				color:white;
+			}
+
+			.label1{
+            color: white;
+            font-size: 18px;
+			margin-left: 30px;
+        	}
+
+			.label2{
+				color: rgb(161, 161, 161);
+				font-size: 18px;
+			}
+
+			.input1{
+				margin-left: 30px;
+				width: 400px;
+				height: 25px;
+				display: inline-block;
+				border:none;
+				border-radius: 4px;
+			}
+
+			button{
+				margin-left: 30px;
+				width: 140px;
+          		height: 32px;
+				border-radius: 3px;
+         	 	border: 0px solid;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body class="container">
+		<div class="box">
+			<!--Professor essa imagem é só meme se precisar eu troco-->
+			<img style="width: 150px; height: 170px; margin-left: 30px; margin-top: 30px; border-radius: 10px;" src="foto.jpg">
+			<h3 class= 'txt' style="margin-top: -170px; margin-right: 30px; text-align: center;"><b>Eduardo Faustino</b></h3>
+			<p style="margin-left: 200px; font-size: 18px; text-align: justify; margin-right: 10px;">
+				<b style="margin-left:30px;"></b> Contrate-me pois tenho experiência com trabalho em
+				equipe e atendimento além de possuir uma <a href="recomendacao.pdf" target="_blank">carta de recomendação</a>, apesar do meu horário limitado por conta do meu 
+				curso estou disposto a absorver conhecimento e me
+				desenvolver no ambiente de trabalho. 
+			</p>
+			<br>
+			<hr style="margin-left:10px; margin-right:10px;">
+			<br>
+			<form>
+				<label style="margin-top: 20px;" class="label1">Nome do interessado</label><br>
+				<input type="text" name="interessado" class="input1"/><br><br>
+				<label class="label1">Nome da empresa</label><br>
+				<input type="text" name="empresa" class="input1"/><br><br>
+				<label class="label1">Salário</label><br>
+				<input style="width: 280px;" type="number" name="salario" class="input1" value="730.00"/><br><br>
+				<label name="tipo" class="label1">Tipo de trabalho</label><br>
+				<select style="width: 285px; height: 27px;" class="input1">
+					<option value="null" selected>Selecione...</option>
+					<option value="Home">Home office</option> 
+					<option value="Presencial">Presencial</option>
+					<option value="Misto">Misto</option>
+				</select><br><br>
+				<label class="label1">Tipo de vínculo</label>
+				<input style="margin-left: 20px;" name="vinculo" type="radio" class="input2" id="C" value="CLT"/><label for="C" class="label2">CLT</label>
+				<input style="margin-left: 20px;" name="vinculo" type="radio" class="input2" id="P" value="PJ"/><label for="P" class="label2">PJ</label>
+				<input style="margin-left: 20px;" name="vinculo" type="radio" class="input2" id="F" value="Freelancer"/><label for="F" class="label2">Freelancer</label>
+				<br><br>
+				<label class="label1">Data de início</label><br>
+				<input style="width: 285px; height: 28px;" type="date" name="inicio" class="input1"/><br><br>
+				<input style="margin-left: 30px;" type="checkbox" id="urgencia">
+				<label class="label2" for="urgencia">Preciso dos seus serviços com urgência!</label><br><br>
+			</form>
+			<a href="ir.html"><button style="background-color: rgb(42, 42, 197);" ><label style="font-size: 18px; margin-left: 6px;" class="label1">Enviar</label></button></a>
+			<a href="curriculo_Eduardo_Faustino.html"><button style="background-color: rgb(158, 158, 42);"><label style="font-size: 18px; margin-left: 6px;" class="label1">Voltar</label></button></a>
+		</div>
+	</body>
+</html>
